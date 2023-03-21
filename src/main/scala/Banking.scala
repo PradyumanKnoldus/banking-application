@@ -4,7 +4,7 @@ class Banking ( private val bankAccounts: Map[Long, Double] = Map.empty ) {
 
   // Create new account by allocating random account number and depositing balance in account
   def createAccount(openingBalance: Double): Banking = {
-    val accountNumber = Random.nextLong().abstailrec
+    val accountNumber = Random.nextLong().abs
     if (bankAccounts.contains(accountNumber)) {
       createAccount(openingBalance)
     } else {
