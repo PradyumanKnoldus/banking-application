@@ -1,3 +1,5 @@
+// I have changed some return types of methods to maintain immutability
+
 import scala.util.Random
 
 class Banking ( private val bankAccounts: Map[Long, Double] = Map.empty ) {
